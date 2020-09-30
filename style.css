@@ -7,3 +7,39 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+header{
+    display: flex;
+    /* add background color to elements to help you see what's going on */
+    /* background: lightblue; */
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+}
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+.nav-links{
+    justify-content: space-around;
+    /* removes the dots */
+    list-style: none;
+}
+.nav-link {
+    color: rgb(66, 51, 66);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav{
+    flex: 2;
+}
+.cart {
+    flex: 1;
+    justify-content: flex-end;
+}
